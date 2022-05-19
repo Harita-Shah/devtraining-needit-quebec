@@ -8,6 +8,7 @@
         </index>
         <index name="index2">
             <element name="interaction"/>
+            <element name="skill"/>
         </index>
         <index name="index3">
             <element name="interaction"/>

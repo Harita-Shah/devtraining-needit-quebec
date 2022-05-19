@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Configuration" max_length="40" name="x_58872_needit_configuration" sizeclass="4" type="collection">
+    <element label="Configuration" max_length="40" name="x_58872_needit_configuration" type="collection">
         <element label="Password" max_length="40" name="password" type="password"/>
         <element label="State" max_length="100" name="state" type="string"/>
         <element label="URL" mandatory="true" max_length="1024" name="url" type="url"/>
