@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Configuration" max_length="40" name="x_58872_needit_configuration" sizeclass="4" type="collection">
+        <element label="Password" max_length="40" name="password" type="password"/>
+        <element label="State" max_length="100" name="state" type="string"/>
+        <element label="URL" mandatory="true" max_length="1024" name="url" type="url"/>
+        <element label="username" max_length="30" name="username" type="string"/>
+        <element label="Users" max_length="32" name="users" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="games" max_length="40" name="u_games" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Chess" sequence="0" value="chess"/>
+                <element inactive_on_update="false" label="Cards" sequence="1" value="cards"/>
+                <element inactive_on_update="false" label="Uno" sequence="2" value="uno"/>
+                <element inactive_on_update="false" label="Cricket" sequence="3" value="cricket"/>
+                <element inactive_on_update="false" label="Football" sequence="4" value="football"/>
+                <element inactive_on_update="false" label="Badminton" sequence="5" value="badminton"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Game Type" max_length="40" name="u_game_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Indoor Games" sequence="0" value="indoor_games"/>
+                <element inactive_on_update="false" label="Outdoor Games" sequence="1" value="outdoor_games"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="users"/>
+        </index>
+    </element>
+</database>
